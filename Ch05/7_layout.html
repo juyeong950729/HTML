@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7_layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrapper {
+            width: 860px;
+            height: auto;
+            background: #aaa;
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        header{
+            width: auto;
+            height: 120px;
+            background: #ccc;
+        }
+        main{
+            width: 840px;
+            height: 450px;
+            background-color: #ccc;
+            margin: 10px 0;
+            padding: 10px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .box1 {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            width: 200px;
+            height: 400px;
+            background: #eee;
+        }
+        .box2 {
+            position: absolute;
+            right: 220px;
+            bottom: 10px;
+            width: 200px;
+            height: 400px;
+            background: #eee;
+        }
+        main > section {
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            width: 400px;
+            height: 400px;
+            background: #eee;
+        }
+        footer{
+            width: auto;
+            height: 100px;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>header</header>
+        <main>
+            <p>main</p>
+            <section>section</section>
+            <aside class="box2">aside #2</aside>
+            <aside class="box1">aside #1</aside>
+        </main>
+        <footer>footer</footer>
+    </div>
+    
+</body>
+</html>

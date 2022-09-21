@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8_layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #wrapper {
+            width: 860px;
+            height: auto;
+            background: #aaa;
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        header {
+            width: auto;
+            height: 120px;
+            background-color: #ccc;
+            margin: 10px 0;
+            padding: 10px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        header > nav {
+            width: 820px;
+            height: 60px;
+            background-color: #eee;
+            position: absolute;
+            bottom: 10px;
+        }
+        main {
+            width: auto;
+            height: auto;
+            background-color: #ccc;
+            overflow: hidden;
+            margin: 10px 0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        main > aside {
+            width: 200px;
+            height: 400px;
+            background: #eee;
+            float: left;
+        }
+        main > section {
+            width: 400px;
+            height: 400px;
+            background-color: #eee;
+            float: left;
+            margin: 0 10px;
+        }
+        footer {
+            width: auto;
+            height: 100px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <p>header</p>
+            <nav>nav</nav>
+        </header>
+        <main>
+            <p>main</p>
+            <aside>aside #1</aside>
+            <section>section</section>
+            <aside>aside #2</aside>
+        </main>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

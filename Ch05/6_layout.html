@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6_layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrapper {
+            width: 860px;
+            height: auto;
+            background: #aaa;
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        header{
+            width: auto;
+            height: 120px;
+            background: #ccc;
+        }
+        main{
+            width: 840;
+            height: auto;
+            background-color: #ccc;
+            margin: 10px 0;
+            padding: 10px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        main > aside {
+            width: 200px;
+            height: 400px;
+            background: #eee;
+            float: left;
+            margin-right: 10px;
+        }
+        main > section {
+            width: 400px;
+            height: 400px;
+            background: #eee;
+            float: left;
+        }
+        footer{
+            width: auto;
+            height: 100px;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>header</header>
+        <main>
+            <p>main</p>
+            <aside>aside #1</aside>
+            <aside>aside #2</aside>
+            <section>section</section>
+        </main>
+        <footer>footer</footer>
+    </div>
+    
+</body>
+</html>

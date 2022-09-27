@@ -214,10 +214,10 @@ footer > p {
 
 /* 글목록 */
 #board > .list {
+    position: relative;
     width: 720px;
     height: auto;
     margin: 60px auto;
-    overflow: hidden;
 }
 #board > .list > table caption {
     text-align: left;
@@ -252,9 +252,10 @@ footer > p {
 
 #board > .list > .page {
     text-align: center;
-    padding: 15px;
+    margin-top: 10px;
 }
 #board > .list > .page > a {
+    display: inline-block;
     padding: 8px;
     border: 1px solid #d7d7d7;
     background: #f2f2f2;
@@ -285,7 +286,9 @@ footer > p {
 .btnNext {background: #e9e9e9;}
 .btnRegister {}
 .btnWrite {
-    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     border: 1px solid #3b3c3f;
     background: #4b545e;
     color: #fff;}

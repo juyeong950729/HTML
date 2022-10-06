@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>드롭다운 목록 만들기, 그룹으로 묶기</title>
+    <!--
+        날짜 : 2022/10/06
+        이름 : 조주영
+        내용 : 드롭다운 목록
+    -->
+</head>
+<body>
+    <form>
+        <h2>여름방학 특강 신청</h2>
+        <fieldset>
+            <legend>수강 신청인</legend>
+            <label class="reg" for="id">학번</label>
+            <input type="text" id="id"><br/>
+            <label class="reg" for="name">이름</label>
+            <input type="text" id="name"><br/>
+            <label for="reg" for="class">학과</label>
+            <select size="5" id="class" multiple>
+                <optgroup label="공과대학">
+                    <option value="archi">건축공학과</option>
+                    <option value="mechanic">기계공학과</option>
+                    <option value="indust">산업공학과</option>
+                    <option value="elec">전기전자공학과</option>
+                    <option value="computer" selected>컴퓨터공학과</option>
+                    <option value="chemical">화학공학과</option>
+                </optgroup>
+                <optgroup label="인문대학">
+                    <option value="history">사학과</option>
+                    <option value="lang">어문학부</option>
+                    <option value="philo">철학</option>
+                </optgroup>
+            </select>
+        </fieldset>
+    </form>
+</body>
+</html>

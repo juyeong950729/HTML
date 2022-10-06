@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>다양한 숫자 입력 폼</title>
+    <!--
+        날짜 : 2022/10/06
+        이름 : 조주영
+        내용 : 다양한 숫자 입력 폼 사용해보기
+    -->
+</head>
+<body>
+    <form>
+        <li>
+            <label class="reg" for="member">참여인원<small>(최대 10명)</small></label>
+            <input type="number" id="member" value="1" min="0" max="10" step="1">
+        </li>
+        <li>
+            <label class="reg" for="stuffs">지원물품<small>(1인당 5개)</small></label>
+            <input type="number" id="stuffs" value="1" min="0" max="50" step="5">
+        </li>
+        <li>
+            <label class="reg" for="satis">희망단계<small>(하,중,상)</small></label>
+            <input type="range" id="satis" value="1" min="1" max="3">
+        </li>
+    </form>
+    
+</body>
+</html>

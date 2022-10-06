@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title> 03-2 링크 만들기 </title>
+    <script src="modernizr-custom.js"></script>
     <!--
         날짜 : 2022/09/15
         이름 : 조주영
@@ -50,6 +51,17 @@
         <area shape="rect" coords="10,10,160,200" href="http://www.naver.com" target="_blank">
         <area shape="rect" coords="220,10,380,200" href="http://www.daum.net" target="_blank">
     </map>
+
+    <h1> SVG 이미지 삽입하기 </h1>
+    <img src="image/1681779.svg">
+
+    <h1>Moernizr를 사용해 SVG 이미지 삽입하기</h1>
+    <img src="image/1681779.svg">
+    <script>
+        if (!Modernizr.svg){
+            $("img").attr("src", "image/1681779.svg");
+        }
+    </script>
 
 </body>
 </html>

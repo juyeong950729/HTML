@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input의 여러 기능</title>
+    <!--
+        날짜 : 2022/10/06
+        이름 : 조주영
+        내용 : 최대, 최소, step, 글자 길이
+    -->
+</head>
+<body>
+    <form>
+        <h1>최대, 최솟값, step 지정하기</h1>
+        <fieldset>
+            <legend>교재 주문</legend>
+            <label class="reg" for="group">단체주문</label>
+            <input type="number" id="group" value="10" min="10" max="100" step="10">
+        </fieldset>
+
+        <h1>텍스트 필드의 글자 길이 지정하기</h1>
+        <h2>회원 가입을 환영합니다</h2>
+        <label>아이디: 
+            <input type="text" id="user_id" size="10" minlength="4" maxlength="15"></label>
+        <small style="color:red;">4~15자리 이내의 영문과 숫자</small>
+    </form>
+</body>
+</html>

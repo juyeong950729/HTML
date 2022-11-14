@@ -3,259 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>팜스토리::메인</title>
-    <style>
-        /* 초기화 */
-        * {
-            margin: 0;
-            padding: 0;
-            font: normal 12px '돋움';
-        }
-        ul, ol {list-style: none;}
-        a {text-decoration: none; color: #111;}
-        input, textarea {outline: none;}
-
-        #wrapper {
-            width: 980px;
-            height: auto;
-            margin: 0 auto;
-        }
-
-        /* 헤더 */
-        header {
-            position: relative;
-            width: 100%;
-            height: 142px;
-            background-image: url(./img/head_top_line.png);
-            background-repeat: no-repeat;
-        }
-
-        header > img {
-            float: right;
-            clear: both;
-            margin-top: 26px;
-        }
-
-        header > p {
-            float: right;
-            margin-top: 16px;
-        }
-
-        header > p > a {}
-
-        header > .logo {
-            position: absolute;
-            left: 50%;
-            top: 20px;
-            margin-left: -95px;
-        }
-
-        header > .gnb {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 50px;
-        }
-        header > .gnb > li {
-            float: left;
-            width: 20%;
-            height: 100%;
-            background-image: url(./img/head_menu_line.png);
-            background-repeat: no-repeat;
-            background-position: 0 -6px;
-        }
-        header > .gnb > li > a {
-            position: relative;
-            display: block;
-            width: 100%;
-            height: 100%;
-            font-size: 0;
-            background-position: 0 6px;
-            background-repeat: no-repeat;
-        }
-
-        header > .gnb > li > a > img {
-            position: absolute;
-            left: 50%;
-            top: -16px;
-        }
-
-        header > .gnb > li:nth-child(1) > a {
-            background-image: url(./img/head_menu1.png);
-        }
-        header > .gnb > li:nth-child(2) > a {
-            background-image: url(./img/head_menu2.png);
-        }
-        header > .gnb > li:nth-child(3) > a {
-            background-image: url(./img/head_menu3.png);
-        }
-        header > .gnb > li:nth-child(4) > a {
-            background-image: url(./img/head_menu4.png);
-        }
-        header > .gnb > li:nth-child(5) > a {
-            background-image: url(./img/head_menu5.png);
-        }
-
-        /* 메인 */
-        main {
-            width: 100%;
-            height: auto;
-            border: 1px solid blue;
-            box-sizing: border-box;
-        }
-
-        main > div {
-            width: 100%;
-            margin-top: 10px;
-        }
-
-        main > .bx-wrpper {
-            box-shadow: none;
-            border: none;
-            background: #fff;
-        }
-
-        main > .bx-wrpper img {
-            max-width: 100%;
-            display: block;
-        }
-
-        main > .bx-viewport {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            height: 312px;
-        }
-
-        main > .bx-viewport > ul {
-            float: left;
-            list-style: none;
-            position: relative;
-            width: 980px;
-        }
-        main > .slider {
-            position: relative;
-            height: 312px;
-            overflow: hidden;
-        }
-
-        main > .slider > img {
-            position: absolute;
-            left: 40px;
-            top: 40px;
-        }
-
-        main > .slider > .banner {
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 230px;
-            height: 312px;
-            background-image: url(./img/main_banner_bg.jpg);
-        }
-
-        main > .slider > .banner > img:nth-child(1) {
-            float: right;
-            margin: 10px;
-        }
-        main > .slider > .banner > img:nth-child(1) {
-            margin-top: -20px;
-            margin-left: 10px;
-        }
-        main > .slider > .banner > img:nth-child(3) {
-            margin-left: 10px;
-        }
-
-        main > 
-
-        main > .quick {
-            height: 74px;
-            overflow: hidden;
-        }
-        main > .quick > a {
-            float: left;
-            display: block;
-            width: 50%;
-            height: 100%;
-            padding: 16px;
-            box-sizing: border-box;
-        }
-
-        main > .quick > a:nth-child(1) {
-            background-image: url(./img/main_banner_sub1_bg.jpg);
-        }
-        main > .quick > a:nth-child(2) {
-            background-image: url(./img/main_banner_sub2_bg.jpg);
-        }
-        main > .latest {
-            height: 186px;
-            overflow: hidden;
-        }
-
-        main > .latest table {
-            position: absolute;
-            right: 10px;
-            bottom: 16px;
-            color: #6a6a6a;
-        }
-
-        main > .latest > div {
-            position: relative;
-            float: left;
-            width: 33.33%;
-            height: 100%;
-        }
-
-        main > .latest > div > a {
-            position: absolute;
-            left: 0;
-            top: 16px;
-        }
-
-        main > .latest > div > img {
-            position: absolute;
-            left: 0;
-            bottom: 16px;
-        }
-        main > .info {
-            height: 154px;
-            overflow: hidden;
-        }
-
-        main > .info > div {
-            float: left;
-            height: 100%;
-            border: 1px solid orange;
-            box-sizing: border-box;
-        }
-
-        main > .info > div:nth-child(1) {width: 386px;}
-        main > .info > div:nth-child(2) {width: 230px;}
-        main > .info > div:nth-child(3) {width: 358px;}
-
-        /* 푸터 */
-        footer {
-            width: 100%;
-            height: 120px;
-            margin-top: 10px;
-            border-top: 1px solid #d1cab2;
-            box-sizing: border-box;
-        }
-
-        footer > p {
-            float: right;
-            font-size: 11px;
-            color: #585858;
-            margin-top: 26px;
-            margin-right: 16px;
-            line-height: 18px;
-        }
-
-        footer > p > em {
-            color: #888;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div id="wrapper">
@@ -281,28 +29,18 @@
         </header>
         <main>
             <div class="slider">
-                <div class="bx-wrapper" style="max-width: 980px;">
-                    <div class="bx-viewport" aria-live="polite">
-                        <ul>
-                            <li class="bx-clone"></li>
-                            <li>
-                                
-                            </li>
-                            <li>
-                                
-                            </li>
-                            <li>
-                                
-                            </li>
-                            <li class="bx-clone"></li>
-                        </ul>
-                    </div>
-                    <img src="./img/main_slide_img_tit.png" alt="사람과 자연을 사랑하는 팜스토리">
-                    <div class="banner">
-                        <img src="./img/main_banner_txt.png" alt="GRAND OPEN">
-                        <img src="./img/main_banner_tit.png" alt="팜스토리 오픈기념 30% 할인 이벤트">
-                        <img src="./img/main_banner_img.png" alt="과일">
-                    </div>
+                <ul>
+                    <li><img src="./img/main_slide_img1.jpg" alt="슬라이더1"></li>
+                    <li><img src="./img/main_slide_img2.jpg" alt="슬라이더2"></li>
+                    <li><img src="./img/main_slide_img3.jpg" alt="슬라이더3"></li>
+                </ul>
+                
+                <img src="./img/main_slide_img_tit.png" alt="사람과 자연을 사랑하는 팜스토리">
+
+                <div class="banner">
+                    <img src="./img/main_banner_txt.png" alt="GRAND OPEN">
+                    <img src="./img/main_banner_tit.png" alt="팜스토리 오픈기념 30% 할인 이벤트">
+                    <img src="./img/main_banner_img.png" alt="과일">
                 </div>
             </div>
             <div class="quick">
@@ -449,12 +187,47 @@
                         </tbody>
                     </table>
                 </div>
-                <div>2</div>
-                <div>3</div>
             </div>
             <div class="info">
-                <div>1</div>
-                <div>2</div>
+                <div>
+                    <img src="./img/main_sub2_cs_tit.png" class="tit" alt="고객센터 안내">
+                    <div class="tel">
+                        <img src="./img/main_sub2_cs_img.png" alt>
+                        <img src="./img/main_sub2_cs_txt.png" alt="1666-777">
+                        <p class="time">
+                            평일: AM 09:00 ~ PM 06:00
+                            <br/>
+                            점심: PM 12:00 ~ PM 01:00
+                            <br/>
+                            토, 일요일, 공휴일 휴무
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <a href="#">
+                            <img src="./img/main_sub2_cs_bt1.png" alt="1:1고객문의">
+                        </a>
+                        <a href="#">
+                            <img src="./img/main_sub2_cs_bt2.png" alt="자주묻는질문">
+                        </a>
+                        <a href="#">
+                            <img src="./img/main_sub2_cs_bt3.png" alt="배송조회">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/main_sub2_account_tit.png" class="tit" alt="계좌안내">
+                    <p class="account">
+                        기업은행 123-456789-01-01-012
+                        <br/>
+                        국민은행 01-1234-56789
+                        <br/>
+                        우리은행 123-456789-01-01-012
+                        <br/>
+                        하나은행 123-456789-01-01
+                        <br/>
+                        예 금 주 (주)팜스토리
+                    </p>
+                </div>
                 <div>3</div>
             </div>
         </main>
@@ -465,7 +238,7 @@
                 <br/>
                 등록번호 팜스토리01234 (2013.04.01) / 발행인 : 홍길동
                 <br/>
-                대표 : 홍길동 / 이메일 : email@mail.mail / 전화 : 01234-5678 / 경기도 성남시 잘한다구 신난다동 345
+                대표 : 홍길동 / 이메일 : email@mail.mail / 전화 : 01)234-5678 / 경기도 성남시 잘한다구 신난다동 345
                 <br/>
                 <em>Copyright(C)홍길동 All rights reserved.</em>
             </p>

@@ -108,21 +108,36 @@ main > section:nth-child(3) {height: 190px;}
 main > section:nth-child(4) {height: 660px;}
 main > section:nth-child(5) {height: 200px;}
 main > section:nth-child(6) {height: 660px;}
+
 main > section > article {
     width: 1100px;
     height: 100%;
     margin: 0 auto;
 }
+
 main > .slider {
     background: #ffeed4;
 }
+
 main > .slider ul {
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
+
+main > .slider ul > li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 main > .slider ul > li:nth-child(1) {left: 0; top: 0;}
+main > .slider ul > li:nth-child(2) {left: 100%; top: 0;}
+main > .slider ul > li:nth-child(3) {left: 200%; top: 0;}
+main > .slider ul > li:nth-child(4) {left: 300%; top: 0;}
+main > .slider ul > li:nth-child(5) {left: 400%; top: 0;}
+
 main > .go {}
 main > .go > article {
     padding: 30px 10px;
@@ -151,13 +166,15 @@ main > .go div:nth-child(5) {
     height: 220px;
     margin-top: 10px;
 }
+
 main > .oneday {
-    background-image: url(./img/oneday_bg.png);
+    background-image: url(../img/oneday_bg.png);
     background-size: cover;
     background-position: 50% center;
 }
 
 main > .oneday > article img {margin-top: 50px;}
+
 main > .vegetable {}
 main > .vegetable > article {
     padding: 60px 0px 40px;
@@ -226,8 +243,10 @@ main .all {
     font-weight: bold;
 }
 
+main .all:hover {border-color: #999;}
+
 main > .premium {
-    background-image: url(./img/premium_bg.png);
+    background-image: url(../img/premium_bg.png);
     background-size: cover;
     background-position: 50% center;
 }
